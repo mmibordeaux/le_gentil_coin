@@ -13,7 +13,7 @@ rails generate scaffold user pseudonym:string photo:string
 
 rails generate scaffold offer name:string image:string description:text price:decimal user:references
 
-rails g migration create_table_offers_users offer:references user:references
+rails g migration create_offers_users offer:references user:references
 
 rails server
 ```
