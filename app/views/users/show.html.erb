@@ -1,0 +1,21 @@
+<h1><%= @user %></h1>
+
+<%= render @user %>
+
+<h2>Offres créées</h2>
+<% @user.offers.each do |offer| %>
+  <%= link_to offer %>
+<% end %>
+
+<h2>Offres favorites</h2>
+<% @user.offers_favorites.each do |offer| %>
+  <%= link_to offer %>
+<% end %>
+
+<hr>
+<div>
+  <%= link_to "Edit this user", edit_user_path(@user) %> |
+  <%= link_to "Back to users", users_path %>
+
+  <%= button_to "Destroy this user", @user, method: :delete %>
+</div>
