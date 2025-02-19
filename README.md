@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```bash
+rails new le_gentil_coin
 
-Things you may want to cover:
+cd le_gentil_coin
+code . # Mais pour les Mac ça marche pas toujours
 
-* Ruby version
+bundle add simple_form
+rails generate simple_form:install
 
-* System dependencies
+rails generate scaffold user pseudonym:string photo:string 
 
-* Configuration
+rails generate scaffold offer name:string image:string description:text price:decimal user:references
 
-* Database creation
+rails g migration create_table_offers_users offer:references user:references
 
-* Database initialization
+rails server
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
