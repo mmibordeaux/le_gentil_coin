@@ -21,6 +21,14 @@ rails server
 ## Scalingo
 
 Ajouter ça au Gemfile 
+
 ```rb
 ruby "3.4.1"
 ```
+
+Mettre à jour le bundle 
+```bash
+bundle update --ruby
+```
+
+Supprimer le dossier `.github`
