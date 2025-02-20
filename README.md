@@ -41,3 +41,11 @@ Mettre ça dedans
 web: bundle exec puma -C config/puma.rb
 postdeploy: rails db:migrate
 ```
+
+Ne pas faire tout ça, il faut PostgreSQL !
+
+Pour regénérer l'application, utiliser :
+
+```bash
+rails new --skip-solid --database=postgresql APP_NAME
+```
