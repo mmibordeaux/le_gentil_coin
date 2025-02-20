@@ -18,3 +18,9 @@ rails g migration create_offers_users offer:references user:references
 rails server
 ```
 
+## Scalingo
+
+Ajouter ça au Gemfile 
+```rb
+ruby "3.4.1"
+```
