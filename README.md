@@ -34,7 +34,7 @@ bundle update --ruby
 Supprimer le dossier `.github`
 
 
-Créer un fichier `Procfile``
+Créer un fichier `Procfile`
 
 Mettre ça dedans 
 ```
