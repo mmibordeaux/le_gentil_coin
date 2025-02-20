@@ -32,3 +32,12 @@ bundle update --ruby
 ```
 
 Supprimer le dossier `.github`
+
+
+Créer un fichier `Procfile``
+
+Mettre ça dedans 
+```
+web: bundle exec puma -C config/puma.rb
+postdeploy: rails db:migrate
+```
